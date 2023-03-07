@@ -1,0 +1,115 @@
+@mixin productos {
+    @media (min-width:801px) and (max-width:1200px){
+        position: absolute;
+        display: grid;
+        top: 18vh;
+        grid-template:repeat(4, 30vw)/8vw 24vw 6vw 24vw 6vw 24vw;
+        grid-row-gap:10vw;
+        &>div:nth-child(3n+1){
+            grid-column-start: 2;
+        }
+        &>div:nth-child(3n+2){
+            grid-column-start: 4;
+        }
+        &>div:nth-child(3n){
+            grid-column-start: 6;
+        }
+    }
+
+    @media (max-width:800px){
+        position: absolute;
+        display: grid;
+        top: 18vh;
+        grid-template:repeat(12, 80vw)/10vw 80vw;
+        grid-row-gap:10vw;
+        &>div{
+            grid-column-start: 2;
+        }
+    }
+
+    @media (min-width:1201px) and (max-width:1800px){
+        position: absolute;
+        display: grid;
+        top: 20vh;
+        grid-template:repeat(4, 30vw)/12vw 20vw 8vw 20vw 8vw 20vw;
+        grid-row-gap:10vw;
+        &>div:nth-child(3n+1){
+            grid-column-start: 2;
+        }
+        &>div:nth-child(3n+2){
+            grid-column-start: 4;
+        }
+        &>div:nth-child(3n){
+            grid-column-start: 6;
+        }
+    }
+
+    @media (min-width:1801px){
+        position: absolute;
+        display: grid;
+        top: 20vh;
+        grid-template:repeat(3, 25vw)/11vw 15vw 6vw 15vw 6vw 15vw 6vw 15vw;
+        grid-row-gap:12vh;
+        &>div:nth-child(4n+1){
+            grid-column-start: 2;
+        }
+            &>div:nth-child(4n+2){
+            grid-column-start: 4;
+        }
+        &>div:nth-child(4n+3){
+            grid-column-start: 6;
+        }
+        &>div:nth-child(4n){
+            grid-column-start: 8;
+        }
+    }
+
+    @media (max-height:600px) and (min-aspect-ratio:1/1){
+        position: absolute;
+        display: grid;
+        top: 20vh;
+        grid-template:repeat(6, 70vh)/10vw 36vw 8vw 36vw;
+        grid-row-gap:12vh;
+        &>div:nth-child(odd){
+            grid-column-start: 2;
+        }
+        &>div:nth-child(even){
+            grid-column-start: 4;
+        }
+    }
+
+    .descuento{
+        position: absolute;
+        margin: 0%;
+        text-align: center;
+        width: 3em;
+        padding: 0.5em;
+    }
+
+    &>div{
+        &>img{
+            position: relative;
+            width:60%;
+            height: auto;
+            top:10%;
+            left: 20%;
+        }
+    }
+
+    .producto{
+        position: relative;
+        margin: 0%;
+        top: 15%;
+        text-align: center;
+    }
+
+    .precio{
+        height: 100%;
+        &>p{
+            position: relative;
+            margin: 0%;
+            top: 15%;
+            text-align: center;
+        }
+    }
+}

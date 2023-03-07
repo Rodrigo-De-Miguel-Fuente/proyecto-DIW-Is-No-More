@@ -1,0 +1,33 @@
+header {
+  background: #A7732F;
+}
+
+.menu {
+  background: none;
+}
+.menu > input:not(.InicioSesion) {
+  background: none;
+  color: white;
+  font-size: 18px;
+}
+.menu > input:not(.InicioSesion):hover {
+  border-left: 2px solid #c68532;
+  border-right: 2px solid #c68532;
+  border-top: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+.menu > input:not(.InicioSesion):not(:hover) {
+  border: none;
+}
+
+.InicioSesion {
+  background: #9FD72A;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px 0 rgba(59, 57, 55, 0.2);
+  color: #D8093B;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 20px;
+  letter-spacing: 0.1rem;
+}/*# sourceMappingURL=header.css.map */

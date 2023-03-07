@@ -1,0 +1,36 @@
+@mixin productos {
+
+    @media (max-width:1200px){ 
+        font-size: 24px;
+    }
+
+    @media (min-width:1201px) and (max-width:1800px){
+        font-size: 32px;
+    }
+
+    @media (min-width:1801px){
+        font-size: 40px;
+    }
+
+
+    .descuento{
+        background-color: rgb(65,144,26);
+    }
+
+    &>div{
+        background-color: rgba(65, 144, 26, 0.4);
+    }
+
+    .precioPrincipal{
+        @media (max-width:1800px){
+            font-size: 24px;
+        }
+        @media (min-width:1801px){
+            font-size: 1.875vw;
+        }
+    }
+
+    .precioDetalle{
+        font-size: 20px;
+    }
+}

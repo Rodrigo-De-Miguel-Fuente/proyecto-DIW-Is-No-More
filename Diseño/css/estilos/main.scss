@@ -1,0 +1,21 @@
+body, html{
+    background-color: #F1F2C4;
+    font-family:'Gill Sans MT';
+}
+
+.breadcrumbs{
+    font-size: calc(16px + 0.5vh);
+    &>a{
+        color: rgb(0, 166, 255);
+        &:not(:hover){
+            text-decoration: none;
+        }
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+
+@import "header";
+@import "footer";

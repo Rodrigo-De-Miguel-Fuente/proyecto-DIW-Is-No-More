@@ -1,0 +1,24 @@
+@import "main";
+
+
+.sesion{
+    background-color: white;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    &>label{
+        color: #91c71c;
+    }
+    &>input{
+        color: #312f40;
+        border: 1px solid #a0a9ba;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    &>.boton{
+        background-color: #91c71c;
+        color: #312f40;
+        border: 1px solid #a0a9ba;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+}

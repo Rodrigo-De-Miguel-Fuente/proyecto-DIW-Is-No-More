@@ -1,0 +1,7 @@
+
+@import "main_layout";
+@import "productos_layout";
+
+.productos{
+    @include productos;
+}

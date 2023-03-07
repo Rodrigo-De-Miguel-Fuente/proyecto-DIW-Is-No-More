@@ -1,0 +1,16 @@
+@import "main";
+
+.producto{
+    font-size: 2.5vw;
+}
+
+.compra{
+    background: rgb(65, 144, 26);
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px 0 rgb(59 57 55 / 20%);
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: .1rem;
+}
