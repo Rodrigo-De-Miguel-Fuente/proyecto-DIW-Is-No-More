@@ -1,9 +1,0 @@
-footer {
-  position: fixed;
-  display: grid;
-  left: 0px;
-  bottom: 0px;
-  grid-template: 4vh 4vh/35vw 35vw;
-  grid-column-gap: 30vw;
-  text-align: center;
-}/*# sourceMappingURL=footer_layout.css.map */
